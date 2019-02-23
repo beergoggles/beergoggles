@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Beer Goggles</title>
+
+    <!-- Boostrap Stylesheet -->
+    <link rel="stylesheet" href="bootstrap.min.css" media="screen">
+
+    <!-- Our own CSS stylesheet -->
+    <link rel="stylesheet" href="styles.css" media="screen">
+
+  </head>
+
+  <body>
+    <!-- Start of navbar -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid navbar-custom">
+
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="row">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle Navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <div class="col-xs-9 phone-nav">
+              <a class="navbar-brand" href="#" id="logo">Beer Goggles</a>
+            </div>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right navbar-right-custom">
+              </li>
+              <li><a href="beerindex.htm">Beer Index</a></li>
+              <li><a href="aboutus.html">About Us</a></li>
+              <li><a href="selection.html">Find a Beer!</a></li>
+
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div>
+      </div><!-- /.container-fluid -->
+    </nav>
+    <!-- End of navbar -->
+
+    <!-- Start of container -->
+    <div class="container">
+      <section class="row">
+        <div class="col-md-8">
+          <article class="description-content">
+            <h1 class="description-header">Try a Swig of This!</h1>
+            <hr class="description-hr"/>
+            <div class="container">
+              <div class="col-md-8">
+                <h1>Filtered Data Summary: Beer</h1>
+                      <ul class="summary"></ul>
+                    </div>
+                  </div>
+                <div class="col-md-8">
+              <table class="table table-striped">
+                <thead>
+                  <th>Beer</th><th>ABV</th><th>Description</th>
+                    <tbody></tbody>  
+                  </thead>
+                </table>  
+              </div>   
+          </article>
+        </div>
+        <div class="col-md-4">
+          <!-- Start of Visualizations imageNav Area -->
+          <section id="imageNav-area">
+            <div class="imageNav-content">
+              <h2 class="imageNav-header">Want to Try a New Beer?</h2>
+              <hr />
+              <div class="row">
+                  <div class="col-md-12">
+                    <form>
+                      <div class="form-group">
+                        <label for="patient-form">Enter an ABV</label>
+                        <div></div>
+                        <input class="form-control" id="patient-form-input" name="patient-form" type="text" placeholder="ABV">
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              <label for="patient-form">Choose the Style of Beer</label>
+                <div class="checkbox">
+                
+                  <div></div>
+                  <label><input name="beer" type="checkbox" id="aleCheck" value="Ale">Ale</label>
+              </div>
+      
+              <div class="checkbox">
+                <label><input name= "beer" type="checkbox" id="hopsCheck" value="Hops">Hops</label>
+              </div>
+      
+                <div class="checkbox disabled">
+                  <label><input name= "beer" type="checkbox" id="paleCheck" value="Pale" >Pale</label>
+                </div>
+      
+            
+                <div class="checkbox disabled">
+                  <label><input type="checkbox" id="lightCheck" value="Light" >Light</label>
+                </div>
+      
+                <div class="checkbox disabled">
+                  <label><input type="checkbox" id="darkCheck" value="Dark" >Dark</label>
+                </div>
+        
+                <div class="checkbox disabled">
+                  <label><input type="checkbox" id="stoutCheck" value="Stout" >Stout</label>
+                </div>
+      
+                  <button id="submit" type="submit" class="btn btn-default">Submit</button>
+            </div>
+              <div id="images">
+
+            </div>
+          </section>
+          <!-- End of the Visualizations imageNav Area -->
+
+        </div>
+      </section>
+    </div>
+    <!-- End of container -->
+
+    <!-- Start of footer -->
+    <footer class="footer navbar-fixed-bottom">
+      <div class="two-toned-footer-color"></div>
+      <p class="text-muted text-muted-footer text-center">
+        &copy; Copyright Coding Bootcamp 2017
+      </p>
+    </footer>
+    <!-- End of footer -->
+
+    <!-- jQuery CDN -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <!-- Bootstrap CDN -->
+  </body>
+
+</html>
