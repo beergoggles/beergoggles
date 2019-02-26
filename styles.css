@@ -1,0 +1,454 @@
+/* ----DEFAULT ELEMENT STYLING START---- */
+html {
+  /* Positioning */
+  position: relative;
+
+  /* Box-model */
+  min-height: 100%;
+}
+body {
+    background: #D8D8C0;
+    background-image: url("flight.jpg");
+    height: 900px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}  
+  /* Giving our navbar some padding and a background color */
+.navbar {
+    background: #D8D8C0;
+    padding: 0px;
+    margin-top: -10px;
+}
+  
+  /* Making our navbar li's inline-block elements this makes it so we can have multiple on the same line. Floats could have been used too */
+.navbar li {
+    display: inline-block;
+    margin-right: 0%;
+    align-content: right;
+}
+body {
+  /* Positioning */
+  margin-bottom: 150px;
+
+  /* Typography */
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+  /* Visual */
+  background-color: #A86048;
+}
+
+/* Media query for body */
+@media only screen and (max-width: 767px) {
+  /* Set background color to white on small screens */
+  body {
+    /* Visual */
+    background-color: #D8D8C0;
+
+  }
+}
+
+/* ----DEFAULT ELEMENT STYLING END---- */
+
+/* ----NAV START---- */
+.navbar-custom {
+  background-color: #D8D8C0;
+}
+
+#logo {
+  /* Box-model */
+  height: 80px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  /* Positioning */
+  margin-left: 90px;
+  font-family: Georgia, Times, "Times New Roman", serif;
+
+  /* Typography */
+  font-size: 25px;
+  font-weight: bold;
+  color: #783030;
+
+  /* Visual */
+  background: #D8D8C0;
+}
+
+/* Logo hover state */
+#logo:hover {
+  /* Visual */
+  opacity: 0.7;
+}
+
+.navbar-right-custom {
+  /* Box-model */
+  padding-top: 6px;
+  padding-right: 20px;
+
+  /* Typography */
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/* Nav element hover state */
+.navbar-default .navbar-nav > li > a:hover {
+  color: #783030;
+}
+
+/* Media query for nav */
+@media only screen and (max-width: 767px) {
+  .navbar-header {
+    background-color: #D8D8C0;
+  }
+
+  #logo {
+    width: 100%;
+
+    /* Box-model */
+    height: 70px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+
+    /* Positioning */
+    margin-left: 0;
+    font-family: Georgia, Times, "Times New Roman", serif;
+
+    /* Typography */
+    font-size: 40px;
+    font-weight: bold;
+    color: #D8D8C0;
+
+    /* Visual */
+    background: #D8D8C0;
+  }
+}
+
+/* -----NAV END---- */
+
+/* ----DESCRIPTION START---- */
+.description-header {
+  /* Positioning */
+  margin-bottom: 33px;
+  font-family: Georgia, Times, "Times New Roman", serif;
+
+  /* Typography */
+  font-size: 40px;
+  font-weight: bold;
+  color: #D8D8C0;
+}
+
+.description-content {
+  /* Box-model */
+  padding: 30px;
+
+  /* Positioning */
+  margin-top: 32px;
+
+  /* Visual */
+  background-color: #fff;
+}
+
+.description-content > p {
+  /* Box-model */
+  padding-top: 20px;
+
+  /* Typography */
+  font-size: 30px;
+  line-height: 30px;
+  color: #D8D8C0;
+}
+
+.description-text {
+  padding-bottom: 20px;
+}
+
+#description-image {
+  /* Positioning */
+  float: left;
+
+  /* Box-model */
+  width: 200px;
+  height: 200px;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+/* Description content media query */
+@media only screen and (max-width: 767px) {
+  /* override default class styling for positioning/padding */
+
+  .description-content {
+    /* Box-model */
+    padding: 0;
+
+    /* Positioning */
+    margin-top: 0;
+  }
+}
+
+/* ----DESCRIPTION END---- */
+
+/* ----IMAGE NAV START---- */
+#imageNav-area {
+  width: 90%;
+
+  /* Box-model */
+  padding: 30px 30px 43px;
+
+  /* Positioning */
+  margin-top: 32px;
+
+  /* Visual */
+  background-color: #D8D8C0;
+}
+
+.imageNav-header {
+  /* Positioning */
+  margin-bottom: 40px;
+  font-family: Georgia, Times, "Times New Roman", serif;
+
+  /* Typography */
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.imageNav-photo {
+  width: 140px;
+
+  /* Box-model */
+  height: 140px;
+}
+
+.imageNav-photo:hover {
+  /* Visuals */
+  opacity: 0.6;
+}
+
+.imageNav-photo.active {
+  /* Visuals */
+  border: 2px solid #D8D8C0;
+}
+
+#images {
+  /* Box-model */
+  padding-top: 15px;
+
+  /* Typography */
+  text-align: center;
+}
+
+/* ----IMAGE NAV END---- */
+
+/* ----COMPARISON START---- */
+.comparison-image:hover {
+  opacity: 0.6;
+}
+
+.comparison-header {
+  /* Positioning */
+  margin-bottom: 30px;
+  font-family: Georgia, Times, "Times New Roman", serif;
+
+  /* Typography */
+  font-size: 30px;
+  font-weight: bold;
+  color: #D8D8C0;
+  text-align: center;
+}
+
+/* ----COMPARISON END---- */
+
+/* ----FOOTER START---- */
+.footer {
+  /* Positioning */
+  position: absolute;
+  bottom: 0;
+
+  /* Box-model */
+  width: 100%;
+  height: 60px;
+  margin-top: 30px;
+
+  /* Visual */
+  background-color: #D8D8C0;
+}
+
+.text-muted-footer {
+  /* Positioning */
+  margin-top: 15px;
+
+  /* Typography */
+  color: #fff;
+}
+
+.two-toned-footer-color {
+  /* Box-model */
+  height: 6px;
+  padding-top: 3px;
+
+  /* Visual */
+}
+.dataframe {
+  color:rgb(20, 19, 19);
+  background-color: #fff;
+  opacity: 0.6;
+  filter: alpha(opacity=80);
+  height: 100%;
+  max-width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 5px;
+  vertical-align: top;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+tbody{
+   display:block;
+   overflow:auto;
+   height:1000px;
+   width:100%;
+}
+th{
+   font-style: bold;
+   text-align: center;
+}
+
+.slidecontainer {
+  position: relative;
+}
+
+input[type=range] {
+  display: block;
+  width: 100%;
+  margin: 0;
+  -webkit-appearance: none;
+  outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  position: relative;
+  height: 12px;
+  border: 1px solid #b2b2b2;
+  border-radius: 5px;
+  background-color: #e2e2e2;
+  box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+input[type=range]::-webkit-slider-thumb {
+  position: relative;
+  top: -5px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #999;
+  -webkit-appearance: none;
+  background-color: #fff;
+  box-shadow: inset 0 -1px 2px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+output {
+  position: absolute;
+  top: -32px;
+  display: none;
+  width: 50px;
+  height: 24px;
+  border: 1px solid #e2e2e2;
+  background-color: #fff;
+  border-radius: 3px;
+  color: #777;
+  font-size: .8em;
+  line-height: 24px;
+  text-align: center;
+}
+
+input[type=range]:active + output {
+  display: block;
+  transform: translateX(-50%);
+}
+.form-control {
+  display: inline-block;
+  max-width: 30%;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.dgcontainer {
+  margin: 30px auto;
+  border: 1px solid #333;
+  background: #55c1e7;
+}
+
+/*--extend--*/
+.area {
+  width: 100px;
+  height: 288px;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 100;
+}
+
+/* .fore, .mid, .bk, .container { 
+  @extend .area; 
+} */
+
+.figure {
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/57786/dog-walk.svg") no-repeat;
+  width: 220px;
+  height: 266px;
+  transform: translate3D(200px, 50px, 0);
+  animation: walk 0.78s steps(9) infinite;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000;
+}
+.no-svg .figure {
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/57786/dog-walk.png");
+}
+
+.fore {
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/57786/foreground.svg");
+  transform: translateZ(0);
+  animation: bk 7s -5s linear infinite;
+}
+.no-svg .fore {
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/57786/foreground.png");
+}
+
+.mid {
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/57786/midground.svg");
+  animation: bk 15s -5s linear infinite;
+  transform: translateZ(0);
+}
+.no-svg .mid {
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/57786/midground.png");
+}
+
+.bk {
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/57786/background.svg");
+  animation: bk 20s -5s linear infinite;
+  transform: translateZ(0);
+}
+.no-svg .bk {
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/57786/background.png");
+}
+
+@keyframes walk {
+  100% { background-position: 0 -2376px; }
+}
+
+@keyframes bk {
+  100% { background-position: 200% 0; }
+}
+
+@media screen and ( max-width: 100px ) {
+  .container { 
+    width: 20%; 
+    margin-top: 0;
+  }
+  .figure { transform: translate3D(40%, 50px, 0); }
+}
+/* ----FOOTER END---- */
